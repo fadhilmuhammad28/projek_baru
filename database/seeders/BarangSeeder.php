@@ -12,6 +12,11 @@ class BarangSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        DB::table('barang')->insert([
+            'nama' => 'Boxy Jacket',
+            'harga' => '350000',
+            'stok' => '10',
+        ]);
+        
     }
 }
